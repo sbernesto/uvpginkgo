@@ -70,14 +70,22 @@
     >
       <div class="colophon">
         <nav class="nav-colophon" aria-label="${_('About')}">
-          <ol>
-              % for item_num, link in enumerate(footer['navigation_links'], start=1):
-              <li class="nav-colophon-0${item_num}">
-                <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
+        <ol>
+              <li class="nav-colophon-01">
+                <a id="about" href="http://uvp.com.mx">Acerca de</a>
               </li>
-              % endfor
+              <li class="nav-colophon-02">
+                <a id="blog" href="/contact">Contacto</a>
+              </li>
+              <li class="nav-colophon-03">
+                <a id="contact" href="/faq">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-colophon-04">
+                <a id="donate" href="/donate">Informaci&oacute;n</a>
+              </li>
           </ol>
-        </nav>
+
+	</nav>
 
         % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>

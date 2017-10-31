@@ -37,6 +37,32 @@ $course-search-input-height: ($button-size);
       }
     }
 
+    .title2 {
+      @include span-columns(8);
+      @include shift(2);
+      @include box-sizing(border-box);
+      @include transition(all 0.2s linear 0s);
+      position: relative;
+      //box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+      //background: $black;
+      background-image: url(#{$static-path}/images/banner.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size:contain;
+      -moz-background-size:contain;
+      -o-background-size:contain;
+      padding: ($baseline) ($baseline*1.5);
+      min-height: ($baseline*6);
+      vertical-align: top;
+
+      // STATE: hover and focus
+      &:hover, &:focus {
+        .actions {
+          display: none;
+        }
+      }
+    }
     .title {
       @include span-columns(8);
       @include shift(2);

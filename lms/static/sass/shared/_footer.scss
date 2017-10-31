@@ -64,7 +64,7 @@
           margin-right: ($baseline*0.75);
 
           a {
-            color: tint($black, 20%);
+            color: tint($white, 20%);
 
             &:hover, &:focus, &:active {
               color: $link-color;
