@@ -5,6 +5,7 @@
     box-sizing: border-box;
     position: relative;
     width: 100%;
+    height: 135px;
     border-bottom: 1px solid $gray-l1;
     box-shadow: 0 1px 5px 0 $shadow-l1;
     background: $header-bg;
@@ -20,7 +21,7 @@
         padding: 10px 10px 0;
         width: 100%;
         max-width: $lms-max-width;
-	color: #951B81;
+	color: #fff;
 
         .left {
             @include float(left);
@@ -44,7 +45,7 @@
             color: $lms-label-color;
             .provider {
               font-weight: bold;
-	      color: #951B81;
+	      color: #fff;
             }
         }
 
